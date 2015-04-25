@@ -145,7 +145,7 @@ class Zone(ASO):
         for line in ["if rule is not None:",
                      "    save, letter = rule(dt)",
                      "if offset is not None and save is not None:",
-                     "    offset = offset - save",
+                     "    offset = offset + save",
                      "if format is not None and letter is not None and '%' in format:",
                      "    format = format % letter",
                      "return offset, save, format"]:

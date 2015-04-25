@@ -6569,7 +6569,7 @@ class Atlantic_Canary(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6608,7 +6608,7 @@ class Australia_Melbourne(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6638,7 +6638,7 @@ class Etc_GMTplus9(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6668,7 +6668,7 @@ class Etc_GMTplus8(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6727,7 +6727,7 @@ class Europe_Lisbon(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6757,7 +6757,7 @@ class Etc_GMTplus3(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6787,7 +6787,7 @@ class Etc_GMTplus2(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6817,7 +6817,7 @@ class Etc_GMTplus1(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6847,7 +6847,7 @@ class Etc_GMTplus7(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6877,7 +6877,7 @@ class Etc_GMTplus6(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6907,7 +6907,7 @@ class Etc_GMTplus5(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6937,7 +6937,7 @@ class Etc_GMTplus4(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -6972,7 +6972,7 @@ class Indian_Reunion(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7031,7 +7031,7 @@ class Asia_Dhaka(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7086,7 +7086,7 @@ class America_Phoenix(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7129,7 +7129,7 @@ class America_Nipigon(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7172,7 +7172,7 @@ class Asia_Hong_Kong(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7227,7 +7227,7 @@ class Europe_Paris(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7278,7 +7278,7 @@ class Europe_Stockholm(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7313,7 +7313,7 @@ class Pacific_Fiji(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7360,7 +7360,7 @@ class Pacific_Apia(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7403,7 +7403,7 @@ class America_Miquelon(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7450,7 +7450,7 @@ class Pacific_Pago_Pago(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7497,7 +7497,7 @@ class Asia_Rangoon(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7560,7 +7560,7 @@ class America_Mexico_City(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7603,7 +7603,7 @@ class America_Puerto_Rico(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7638,7 +7638,7 @@ class Indian_Mauritius(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7685,7 +7685,7 @@ class Europe_Berlin(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7728,7 +7728,7 @@ class Europe_Zurich(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7771,7 +7771,7 @@ class Africa_Casablanca(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7830,7 +7830,7 @@ class Antarctica_Macquarie(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7885,7 +7885,7 @@ class Asia_Krasnoyarsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7928,7 +7928,7 @@ class Atlantic_Bermuda(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -7975,7 +7975,7 @@ class Australia_Currie(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8022,7 +8022,7 @@ class Asia_Tehran(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8081,7 +8081,7 @@ class Asia_Baku(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8124,7 +8124,7 @@ class America_Santarem(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8167,7 +8167,7 @@ class America_Danmarkshavn(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8210,7 +8210,7 @@ class America_Scoresbysund(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8265,7 +8265,7 @@ class America_Eirunepe(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8308,7 +8308,7 @@ class Asia_Baghdad(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8351,7 +8351,7 @@ class Africa_Monrovia(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8390,7 +8390,7 @@ class America_Vancouver(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8457,7 +8457,7 @@ class Asia_Ho_Chi_Minh(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8496,7 +8496,7 @@ class Asia_Thimphu(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8531,7 +8531,7 @@ class Africa_Accra(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8566,7 +8566,7 @@ class America_Belize(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8601,7 +8601,7 @@ class America_Port_of_Spain(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8652,7 +8652,7 @@ class Asia_Tashkent(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8695,7 +8695,7 @@ class Asia_Tokyo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8738,7 +8738,7 @@ class Pacific_Kiritimati(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8777,7 +8777,7 @@ class Australia_Sydney(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8864,7 +8864,7 @@ class Europe_Riga(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8915,7 +8915,7 @@ class Asia_Dili(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -8982,7 +8982,7 @@ class Asia_Oral(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9012,7 +9012,7 @@ class MST7MDT(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9079,7 +9079,7 @@ class Europe_Istanbul(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9114,7 +9114,7 @@ class Africa_Abidjan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9157,7 +9157,7 @@ class Australia_Lindeman(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9196,7 +9196,7 @@ class Pacific_Galapagos(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9235,7 +9235,7 @@ class America_Bogota(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9278,7 +9278,7 @@ class America_Dawson(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9337,7 +9337,7 @@ class America_Chicago(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9380,7 +9380,7 @@ class Pacific_Kwajalein(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9431,7 +9431,7 @@ class Australia_Broken_Hill(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9474,7 +9474,7 @@ class America_Cuiaba(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9509,7 +9509,7 @@ class Indian_Christmas(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9552,7 +9552,7 @@ class Asia_Jayapura(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9615,7 +9615,7 @@ class Europe_Brussels(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9678,7 +9678,7 @@ class America_Argentina_Cordoba(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9733,7 +9733,7 @@ class America_Noronha(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9800,7 +9800,7 @@ class Africa_Algiers(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9843,7 +9843,7 @@ class Africa_Ndjamena(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9882,7 +9882,7 @@ class America_Costa_Rica(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9945,7 +9945,7 @@ class America_Managua(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -9984,7 +9984,7 @@ class Asia_Brunei(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10014,7 +10014,7 @@ class Etc_GMTplus12(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10117,7 +10117,7 @@ class America_Tijuana(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10156,7 +10156,7 @@ class Pacific_Fakaofo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10203,7 +10203,7 @@ class America_Martinique(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10242,7 +10242,7 @@ class America_Antigua(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10313,7 +10313,7 @@ class America_Indiana_Indianapolis(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10388,7 +10388,7 @@ class America_Argentina_La_Rioja(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10423,7 +10423,7 @@ class Pacific_Tahiti(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10470,7 +10470,7 @@ class America_Pangnirtung(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10517,7 +10517,7 @@ class America_Asuncion(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10576,7 +10576,7 @@ class Europe_Vienna(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10623,7 +10623,7 @@ class Australia_Hobart(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10690,7 +10690,7 @@ class America_Juneau(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10733,7 +10733,7 @@ class America_Inuvik(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10804,7 +10804,7 @@ class America_Ojinaga(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10859,7 +10859,7 @@ class America_Montreal(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10914,7 +10914,7 @@ class Asia_Seoul(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -10993,7 +10993,7 @@ class Europe_Tallinn(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11028,7 +11028,7 @@ class Indian_Mahe(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11107,7 +11107,7 @@ class America_Argentina_Jujuy(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11150,7 +11150,7 @@ class America_Creston(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11213,7 +11213,7 @@ class America_Adak(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11280,7 +11280,7 @@ class Asia_Singapore(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11327,7 +11327,7 @@ class Africa_Nairobi(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11362,7 +11362,7 @@ class Pacific_Noumea(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11397,7 +11397,7 @@ class Africa_Cairo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11468,7 +11468,7 @@ class Europe_Moscow(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11507,7 +11507,7 @@ class Asia_Ulaanbaatar(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11550,7 +11550,7 @@ class America_Rainy_River(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11589,7 +11589,7 @@ class Indian_Maldives(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11652,7 +11652,7 @@ class Asia_Colombo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11695,7 +11695,7 @@ class Australia_Adelaide(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11746,7 +11746,7 @@ class America_Cambridge_Bay(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11785,7 +11785,7 @@ class Pacific_Chatham(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11844,7 +11844,7 @@ class America_Indiana_Winamac(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11919,7 +11919,7 @@ class Asia_Tbilisi(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -11962,7 +11962,7 @@ class Europe_Gibraltar(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12013,7 +12013,7 @@ class Asia_Karachi(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12052,7 +12052,7 @@ class Australia_Lord_Howe(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12082,7 +12082,7 @@ class Etc_GMT_9(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12112,7 +12112,7 @@ class Etc_GMT_8(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12183,7 +12183,7 @@ class America_Bahia_Banderas(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12213,7 +12213,7 @@ class Etc_GMT_1(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12243,7 +12243,7 @@ class Etc_GMT_3(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12273,7 +12273,7 @@ class Etc_GMT_2(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12303,7 +12303,7 @@ class Etc_GMT_5(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12333,7 +12333,7 @@ class Etc_GMT_4(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12363,7 +12363,7 @@ class Etc_GMT_7(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12393,7 +12393,7 @@ class Etc_GMT_6(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12440,7 +12440,7 @@ class America_Boa_Vista(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12503,7 +12503,7 @@ class Africa_Tripoli(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12538,7 +12538,7 @@ class Pacific_Wallis(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12589,7 +12589,7 @@ class Atlantic_Stanley(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12644,7 +12644,7 @@ class Asia_Srednekolymsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12674,7 +12674,7 @@ class CET(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12713,7 +12713,7 @@ class America_Blanc_Sablon(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12760,7 +12760,7 @@ class America_Jamaica(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12823,7 +12823,7 @@ class Europe_Kiev(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12874,7 +12874,7 @@ class Europe_Budapest(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12925,7 +12925,7 @@ class Pacific_Midway(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -12992,7 +12992,7 @@ class America_Goose_Bay(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13027,7 +13027,7 @@ class Asia_Amman(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13090,7 +13090,7 @@ class Asia_Sakhalin(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13145,7 +13145,7 @@ class Africa_Windhoek(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13204,7 +13204,7 @@ class America_Sitka(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13251,7 +13251,7 @@ class America_Guyana(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13286,7 +13286,7 @@ class Pacific_Pohnpei(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13329,7 +13329,7 @@ class America_Sao_Paulo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13368,7 +13368,7 @@ class Australia_Perth(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13431,7 +13431,7 @@ class Asia_Jakarta(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13478,7 +13478,7 @@ class Asia_Pyongyang(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13508,7 +13508,7 @@ class EST5EDT(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13547,7 +13547,7 @@ class Africa_Johannesburg(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13606,7 +13606,7 @@ class Asia_Irkutsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13645,7 +13645,7 @@ class America_Belem(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13708,7 +13708,7 @@ class America_Indiana_Marengo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13795,7 +13795,7 @@ class Europe_Vilnius(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13834,7 +13834,7 @@ class America_Cayenne(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13881,7 +13881,7 @@ class America_Kentucky_Monticello(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13928,7 +13928,7 @@ class America_Rio_Branco(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -13975,7 +13975,7 @@ class America_Cancun(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14014,7 +14014,7 @@ class America_Havana(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14057,7 +14057,7 @@ class Pacific_Guam(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14100,7 +14100,7 @@ class Pacific_Kosrae(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14155,7 +14155,7 @@ class Atlantic_Azores(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14194,7 +14194,7 @@ class Australia_Eucla(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14233,7 +14233,7 @@ class Asia_Shanghai(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14276,7 +14276,7 @@ class America_Rankin_Inlet(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14311,7 +14311,7 @@ class Asia_Beirut(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14346,7 +14346,7 @@ class Africa_Maputo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14397,7 +14397,7 @@ class Asia_Ashgabat(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14432,7 +14432,7 @@ class Asia_Riyadh(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14479,7 +14479,7 @@ class Europe_London(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14542,7 +14542,7 @@ class Europe_Warsaw(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14577,7 +14577,7 @@ class Asia_Damascus(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14616,7 +14616,7 @@ class America_North_Dakota_Center(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14667,7 +14667,7 @@ class America_Indiana_Vevay(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14706,7 +14706,7 @@ class America_Barbados(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14745,7 +14745,7 @@ class Atlantic_Faroe(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14796,7 +14796,7 @@ class Asia_Almaty(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14847,7 +14847,7 @@ class America_Santo_Domingo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14910,7 +14910,7 @@ class America_Nome(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -14953,7 +14953,7 @@ class Asia_Taipei(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15008,7 +15008,7 @@ class America_Yakutat(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15099,7 +15099,7 @@ class America_Argentina_Mendoza(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15154,7 +15154,7 @@ class America_Araguaina(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15184,7 +15184,7 @@ class Etc_UTC(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15263,7 +15263,7 @@ class Europe_Minsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15314,7 +15314,7 @@ class Asia_Kolkata(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15361,7 +15361,7 @@ class America_Atikokan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15460,7 +15460,7 @@ class America_Santa_Isabel(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15511,7 +15511,7 @@ class Asia_Kuching(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15550,7 +15550,7 @@ class Africa_Bissau(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15617,7 +15617,7 @@ class Europe_Samara(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15668,7 +15668,7 @@ class Europe_Amsterdam(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15711,7 +15711,7 @@ class Europe_Tirane(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15758,7 +15758,7 @@ class Pacific_Saipan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15813,7 +15813,7 @@ class Asia_Magadan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15872,7 +15872,7 @@ class Europe_Zaporozhye(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15902,7 +15902,7 @@ class HST(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15937,7 +15937,7 @@ class America_El_Salvador(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -15980,7 +15980,7 @@ class Europe_Madrid(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16043,7 +16043,7 @@ class America_Santiago(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16098,7 +16098,7 @@ class America_Argentina_Buenos_Aires(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16189,7 +16189,7 @@ class America_Argentina_San_Luis(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16219,7 +16219,7 @@ class WET(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16258,7 +16258,7 @@ class America_Regina(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16293,7 +16293,7 @@ class Pacific_Chuuk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16356,7 +16356,7 @@ class Asia_Khandyga(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16391,7 +16391,7 @@ class Pacific_Funafuti(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16434,7 +16434,7 @@ class America_Merida(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16469,7 +16469,7 @@ class America_Guatemala(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16516,7 +16516,7 @@ class Asia_Makassar(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16591,7 +16591,7 @@ class Europe_Chisinau(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16634,7 +16634,7 @@ class America_Monterrey(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16693,7 +16693,7 @@ class Asia_Yekaterinburg(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16736,7 +16736,7 @@ class Pacific_Enderbury(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16771,7 +16771,7 @@ class America_Thule(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16830,7 +16830,7 @@ class America_St_Johns(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16893,7 +16893,7 @@ class America_Moncton(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16936,7 +16936,7 @@ class Europe_Helsinki(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -16983,7 +16983,7 @@ class Atlantic_Cape_Verde(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17018,7 +17018,7 @@ class America_Tegucigalpa(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17053,7 +17053,7 @@ class Indian_Cocos(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17100,7 +17100,7 @@ class America_Boise(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17139,7 +17139,7 @@ class America_Nassau(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17186,7 +17186,7 @@ class Europe_Prague(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17241,7 +17241,7 @@ class America_Halifax(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17280,7 +17280,7 @@ class Asia_Hovd(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17327,7 +17327,7 @@ class America_Manaus(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17366,7 +17366,7 @@ class America_Godthab(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17396,7 +17396,7 @@ class Etc_UCT(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17435,7 +17435,7 @@ class America_North_Dakota_Beulah(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17502,7 +17502,7 @@ class America_Chihuahua(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17545,7 +17545,7 @@ class America_Iqaluit(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17612,7 +17612,7 @@ class America_Argentina_Rio_Gallegos(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17647,7 +17647,7 @@ class Pacific_Gambier(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17714,7 +17714,7 @@ class Europe_Volgograd(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17773,7 +17773,7 @@ class Asia_Novokuznetsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17844,7 +17844,7 @@ class Europe_Uzhgorod(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17911,7 +17911,7 @@ class Asia_Aqtau(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17946,7 +17946,7 @@ class Pacific_Palau(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -17976,7 +17976,7 @@ class PST8PDT(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18023,7 +18023,7 @@ class Atlantic_Madeira(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18086,7 +18086,7 @@ class America_Maceio(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18137,7 +18137,7 @@ class Europe_Malta(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18204,7 +18204,7 @@ class America_Argentina_Ushuaia(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18243,7 +18243,7 @@ class Asia_Bangkok(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18286,7 +18286,7 @@ class Pacific_Niue(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18325,7 +18325,7 @@ class Australia_Brisbane(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18380,7 +18380,7 @@ class America_Recife(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18431,7 +18431,7 @@ class America_Glace_Bay(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18490,7 +18490,7 @@ class Asia_Yerevan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18533,7 +18533,7 @@ class America_La_Paz(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18568,7 +18568,7 @@ class Asia_Urumqi(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18603,7 +18603,7 @@ class Pacific_Guadalcanal(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18642,7 +18642,7 @@ class America_Yellowknife(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18697,7 +18697,7 @@ class Europe_Kaliningrad(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18768,7 +18768,7 @@ class America_Argentina_Tucuman(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18823,7 +18823,7 @@ class Asia_Chita(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18870,7 +18870,7 @@ class Europe_Oslo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18917,7 +18917,7 @@ class America_Caracas(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -18956,7 +18956,7 @@ class America_Panama(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19007,7 +19007,7 @@ class Asia_Hebron(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19046,7 +19046,7 @@ class America_Guayaquil(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19109,7 +19109,7 @@ class Asia_Kuala_Lumpur(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19156,7 +19156,7 @@ class America_Menominee(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19211,7 +19211,7 @@ class Asia_Kamchatka(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19241,7 +19241,7 @@ class Factory(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19296,7 +19296,7 @@ class Asia_Vladivostok(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19343,7 +19343,7 @@ class America_Matamoros(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19382,7 +19382,7 @@ class Asia_Qatar(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19417,7 +19417,7 @@ class Asia_Dubai(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19472,7 +19472,7 @@ class Asia_Yakutsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19527,7 +19527,7 @@ class Asia_Omsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19578,7 +19578,7 @@ class America_Paramaribo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19608,7 +19608,7 @@ class Etc_GMT_11(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19638,7 +19638,7 @@ class Etc_GMT_10(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19668,7 +19668,7 @@ class Etc_GMT_13(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19698,7 +19698,7 @@ class Etc_GMT_12(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19728,7 +19728,7 @@ class Etc_GMT_14(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19763,7 +19763,7 @@ class Pacific_Marquesas(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19822,7 +19822,7 @@ class Asia_Anadyr(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19873,7 +19873,7 @@ class America_New_York(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19912,7 +19912,7 @@ class Pacific_Norfolk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19942,7 +19942,7 @@ class CST6CDT(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -19981,7 +19981,7 @@ class Pacific_Rarotonga(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20040,7 +20040,7 @@ class Asia_Samarkand(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20087,7 +20087,7 @@ class Asia_Dushanbe(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20150,7 +20150,7 @@ class America_Kentucky_Louisville(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20201,7 +20201,7 @@ class America_Toronto(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20248,7 +20248,7 @@ class America_Bahia(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20287,7 +20287,7 @@ class America_Edmonton(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20322,7 +20322,7 @@ class Pacific_Wake(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20377,7 +20377,7 @@ class America_Indiana_Tell_City(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20416,7 +20416,7 @@ class Australia_Darwin(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20459,7 +20459,7 @@ class America_Whitehorse(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20506,7 +20506,7 @@ class America_Swift_Current(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20557,7 +20557,7 @@ class Europe_Copenhagen(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20624,7 +20624,7 @@ class America_Argentina_Salta(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20715,7 +20715,7 @@ class Europe_Simferopol(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20774,7 +20774,7 @@ class America_Detroit(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20833,7 +20833,7 @@ class America_Indiana_Vincennes(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20892,7 +20892,7 @@ class America_Indiana_Petersburg(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20931,7 +20931,7 @@ class Asia_Kathmandu(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -20994,7 +20994,7 @@ class Asia_Pontianak(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21033,7 +21033,7 @@ class America_Port_au_Prince(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21072,7 +21072,7 @@ class America_Cayman(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21123,7 +21123,7 @@ class Europe_Athens(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21162,7 +21162,7 @@ class America_Curacao(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21201,7 +21201,7 @@ class Africa_Khartoum(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21248,7 +21248,7 @@ class Asia_Manila(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21278,7 +21278,7 @@ class EET(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21353,7 +21353,7 @@ class America_Argentina_San_Juan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21392,7 +21392,7 @@ class America_North_Dakota_New_Salem(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21431,7 +21431,7 @@ class Pacific_Port_Moresby(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21474,7 +21474,7 @@ class Europe_Andorra(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21529,7 +21529,7 @@ class Europe_Luxembourg(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21584,7 +21584,7 @@ class Pacific_Honolulu(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21623,7 +21623,7 @@ class Pacific_Majuro(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21690,7 +21690,7 @@ class America_Mazatlan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21729,7 +21729,7 @@ class Asia_Macau(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21784,7 +21784,7 @@ class Europe_Belgrade(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21831,7 +21831,7 @@ class Asia_Choibalsan(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21886,7 +21886,7 @@ class America_Thunder_Bay(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21929,7 +21929,7 @@ class America_Los_Angeles(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -21968,7 +21968,7 @@ class Asia_Kabul(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22007,7 +22007,7 @@ class Atlantic_Reykjavik(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22046,7 +22046,7 @@ class Asia_Nicosia(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22076,7 +22076,7 @@ class Etc_GMTplus11(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22106,7 +22106,7 @@ class Etc_GMTplus10(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22149,7 +22149,7 @@ class Pacific_Tongatapu(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22188,7 +22188,7 @@ class Pacific_Pitcairn(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22235,7 +22235,7 @@ class Pacific_Easter(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22270,7 +22270,7 @@ class Atlantic_South_Georgia(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22309,7 +22309,7 @@ class Africa_El_Aaiun(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22344,7 +22344,7 @@ class America_Campo_Grande(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22387,7 +22387,7 @@ class America_Dawson_Creek(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22442,7 +22442,7 @@ class Europe_Bucharest(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22481,7 +22481,7 @@ class America_Porto_Velho(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22528,7 +22528,7 @@ class Europe_Monaco(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22579,7 +22579,7 @@ class Asia_Bishkek(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22638,7 +22638,7 @@ class Africa_Ceuta(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22689,7 +22689,7 @@ class Europe_Rome(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22728,7 +22728,7 @@ class America_Winnipeg(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22791,7 +22791,7 @@ class Asia_Aqtobe(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22846,7 +22846,7 @@ class America_Fortaleza(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22881,7 +22881,7 @@ class Pacific_Tarawa(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22916,7 +22916,7 @@ class Pacific_Efate(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -22983,7 +22983,7 @@ class Asia_Qyzylorda(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23022,7 +23022,7 @@ class Asia_Jerusalem(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23052,7 +23052,7 @@ class MET(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23091,7 +23091,7 @@ class Pacific_Auckland(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23146,7 +23146,7 @@ class America_Metlakatla(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23197,7 +23197,7 @@ class America_Denver(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23236,7 +23236,7 @@ class Indian_Chagos(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23266,7 +23266,7 @@ class MST(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23317,7 +23317,7 @@ class Pacific_Bougainville(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23388,7 +23388,7 @@ class America_Hermosillo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23427,7 +23427,7 @@ class Africa_Tunis(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23470,7 +23470,7 @@ class America_Montevideo(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23533,7 +23533,7 @@ class Asia_Ust_Nera(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23584,7 +23584,7 @@ class America_Resolute(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23614,7 +23614,7 @@ class Etc_GMT(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23689,7 +23689,7 @@ class Asia_Gaza(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23768,7 +23768,7 @@ class Europe_Dublin(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23843,7 +23843,7 @@ class America_Argentina_Catamarca(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23898,7 +23898,7 @@ class America_Indiana_Knox(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23957,7 +23957,7 @@ class Asia_Novosibirsk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -23987,7 +23987,7 @@ class EST(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -24034,7 +24034,7 @@ class America_Grand_Turk(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -24069,7 +24069,7 @@ class Africa_Lagos(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -24136,7 +24136,7 @@ class Europe_Sofia(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -24175,7 +24175,7 @@ class America_Lima(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -24242,7 +24242,7 @@ class America_Anchorage(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
@@ -24289,7 +24289,7 @@ class Pacific_Nauru(tzinfo):
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
-            offset = offset - save
+            offset = offset + save
         if format is not None and letter is not None and '%' in format:
             format = format % letter
         return offset, save, format
