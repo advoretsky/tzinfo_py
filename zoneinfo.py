@@ -264,6 +264,12 @@ def _Mongol(dt):
     if (dt.year >= 2002) and (dt.year <= 2006) and (dt >= __lastSat(dt.year, 3, 2, 0)):
         l = 'S'
         s = timedelta(seconds=0, hours=1, minutes=0)
+    if (dt.year >= 2015) and (dt >= __lastSat(dt.year, 3, 2, 0)):
+        l = 'S'
+        s = timedelta(seconds=0, hours=1, minutes=0)
+    if (dt.year >= 2015) and (dt >= __lastSat(dt.year, 9, 0, 0)):
+        l = '-'
+        s = timedelta(seconds=0, hours=0, minutes=0)
     return (s, l)
 def _SpainAfrica(dt):
     s = timedelta()
@@ -366,15 +372,21 @@ def _Palestine(dt):
     if (dt.year == 2011) and (dt >= datetime(dt.year, 9, 30, 0, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 2012) and (dt >= __lastThu(dt.year, 3, 0, 0)):
+    if (dt.year >= 2012) and (dt.year <= 2014) and (dt >= __lastThu(dt.year, 3, 0, 0)):
         l = 'S'
         s = timedelta(seconds=0, hours=1, minutes=0)
     if (dt.year == 2012) and (dt >= datetime(dt.year, 9, 21, 1, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 2013) and (dt >= __FriGtEq(dt.year, 9, 21, 0, 0)):
+    if (dt.year == 2013) and (dt >= __FriGtEq(dt.year, 9, 21, 0, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
+    if (dt.year >= 2014) and (dt >= __FriGtEq(dt.year, 10, 21, 0, 0)):
+        l = '-'
+        s = timedelta(seconds=0, hours=0, minutes=0)
+    if (dt.year >= 2015) and (dt >= __lastFri(dt.year, 3, 0, 0)):
+        l = 'S'
+        s = timedelta(seconds=0, hours=1, minutes=0)
     return (s, l)
 def _NYC(dt):
     s = timedelta()
@@ -694,92 +706,6 @@ def _Spain(dt):
         l = 'S'
         s = timedelta(seconds=0, hours=1, minutes=0)
     if (dt.year == 1978) and (dt >= datetime(dt.year, 10, 1, 1, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    return (s, l)
-def _Mont(dt):
-    s = timedelta()
-    l = 'S'
-    if (dt.year == 1917) and (dt >= datetime(dt.year, 3, 25, 2, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1917) and (dt >= datetime(dt.year, 4, 24, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1919) and (dt >= datetime(dt.year, 3, 31, 2, 30)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1919) and (dt >= datetime(dt.year, 10, 25, 2, 30)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1920) and (dt >= datetime(dt.year, 5, 2, 2, 30)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 1920) and (dt.year <= 1922) and (dt >= __SunGtEq(dt.year, 10, 1, 2, 30)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1921) and (dt >= datetime(dt.year, 5, 1, 2, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1922) and (dt >= datetime(dt.year, 4, 30, 2, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1924) and (dt >= datetime(dt.year, 5, 17, 2, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 1924) and (dt.year <= 1926) and (dt >= __lastSun(dt.year, 9, 2, 30)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1925) and (dt.year <= 1926) and (dt >= __SunGtEq(dt.year, 5, 1, 2, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 1927) and (dt.year <= 1937) and (dt >= __lastSat(dt.year, 4, 0, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 1927) and (dt.year <= 1937) and (dt >= __lastSat(dt.year, 9, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1938) and (dt.year <= 1940) and (dt >= __lastSun(dt.year, 4, 0, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 1938) and (dt.year <= 1939) and (dt >= __lastSun(dt.year, 9, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1946) and (dt.year <= 1973) and (dt >= __lastSun(dt.year, 4, 2, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 1945) and (dt.year <= 1948) and (dt >= __lastSun(dt.year, 9, 2, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1949) and (dt.year <= 1950) and (dt >= __lastSun(dt.year, 10, 2, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1951) and (dt.year <= 1956) and (dt >= __lastSun(dt.year, 9, 2, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1957) and (dt.year <= 1973) and (dt >= __lastSun(dt.year, 10, 2, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    return (s, l)
-def _E_Eur(dt):
-    s = timedelta()
-    l = 'S'
-    if (dt.year >= 1977) and (dt.year <= 1980) and (dt >= __SunGtEq(dt.year, 4, 1, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1977) and (dt >= __lastSun	(dt.year, 9, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1978) and (dt >= datetime(dt.year, 10, 1, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1979) and (dt.year <= 1995) and (dt >= __lastSun	(dt.year, 9, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1981) and (dt >= __lastSun	(dt.year, 3, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 1996) and (dt >= __lastSun	(dt.year, 10, 0, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
     return (s, l)
@@ -3344,6 +3270,28 @@ def _Hond(dt):
         l = 'S'
         s = timedelta(seconds=0, hours=0, minutes=0)
     return (s, l)
+def _Belize(dt):
+    s = timedelta()
+    l = 'S'
+    if (dt.year >= 1918) and (dt.year <= 1942) and (dt >= __SunGtEq(dt.year, 10, 2, 0, 0)):
+        l = 'HD'
+        s = timedelta(seconds=0, hours=0, minutes=30)
+    if (dt.year >= 1919) and (dt.year <= 1943) and (dt >= __SunGtEq(dt.year, 2, 9, 0, 0)):
+        l = 'S'
+        s = timedelta(seconds=0, hours=0, minutes=0)
+    if (dt.year == 1973) and (dt >= datetime(dt.year, 12, 5, 0, 0)):
+        l = 'D'
+        s = timedelta(seconds=0, hours=1, minutes=0)
+    if (dt.year == 1974) and (dt >= datetime(dt.year, 2, 9, 0, 0)):
+        l = 'S'
+        s = timedelta(seconds=0, hours=0, minutes=0)
+    if (dt.year == 1982) and (dt >= datetime(dt.year, 12, 18, 0, 0)):
+        l = 'D'
+        s = timedelta(seconds=0, hours=1, minutes=0)
+    if (dt.year == 1983) and (dt >= datetime(dt.year, 2, 12, 0, 0)):
+        l = 'S'
+        s = timedelta(seconds=0, hours=0, minutes=0)
+    return (s, l)
 def _AV(dt):
     s = timedelta()
     l = 'S'
@@ -3753,25 +3701,10 @@ def _NZ(dt):
 def _Chile(dt):
     s = timedelta()
     l = 'S'
-    if (dt.year >= 1927) and (dt.year <= 1932) and (dt >= datetime(dt.year, 9, 1, 0, 0)):
+    if (dt.year >= 1927) and (dt.year <= 1931) and (dt >= datetime(dt.year, 9, 1, 0, 0)):
         l = 'S'
         s = timedelta(seconds=0, hours=1, minutes=0)
     if (dt.year >= 1928) and (dt.year <= 1932) and (dt >= datetime(dt.year, 4, 1, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1942) and (dt >= datetime(dt.year, 6, 1, 4, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1942) and (dt >= datetime(dt.year, 8, 1, 5, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1946) and (dt >= datetime(dt.year, 7, 15, 4, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1946) and (dt >= datetime(dt.year, 9, 1, 3, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1947) and (dt >= datetime(dt.year, 4, 1, 4, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
     if (dt.year == 1968) and (dt >= datetime(dt.year, 11, 3, 4, 0)):
@@ -3804,18 +3737,12 @@ def _Chile(dt):
     if (dt.year == 1987) and (dt >= datetime(dt.year, 4, 12, 3, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 1988) and (dt.year <= 1989) and (dt >= __SunGtEq(dt.year, 3, 9, 3, 0)):
+    if (dt.year >= 1988) and (dt.year <= 1990) and (dt >= __SunGtEq(dt.year, 3, 9, 3, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1988) and (dt >= __SunGtEq(dt.year, 10, 1, 4, 0)):
+    if (dt.year >= 1988) and (dt.year <= 1989) and (dt >= __SunGtEq(dt.year, 10, 9, 4, 0)):
         l = 'S'
         s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1989) and (dt >= __SunGtEq(dt.year, 10, 9, 4, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1990) and (dt >= datetime(dt.year, 3, 18, 3, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
     if (dt.year == 1990) and (dt >= datetime(dt.year, 9, 16, 4, 0)):
         l = 'S'
         s = timedelta(seconds=0, hours=1, minutes=0)
@@ -4515,26 +4442,26 @@ def _CR(dt):
         l = 'S'
         s = timedelta(seconds=0, hours=0, minutes=0)
     return (s, l)
-def _Belize(dt):
+def _E_Eur(dt):
     s = timedelta()
     l = 'S'
-    if (dt.year >= 1918) and (dt.year <= 1942) and (dt >= __SunGtEq(dt.year, 10, 2, 0, 0)):
-        l = 'HD'
-        s = timedelta(seconds=0, hours=0, minutes=30)
-    if (dt.year >= 1919) and (dt.year <= 1943) and (dt >= __SunGtEq(dt.year, 2, 9, 0, 0)):
+    if (dt.year >= 1977) and (dt.year <= 1980) and (dt >= __SunGtEq(dt.year, 4, 1, 0, 0)):
         l = 'S'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1973) and (dt >= datetime(dt.year, 12, 5, 0, 0)):
-        l = 'D'
         s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1974) and (dt >= datetime(dt.year, 2, 9, 0, 0)):
-        l = 'S'
+    if (dt.year == 1977) and (dt >= __lastSun	(dt.year, 9, 0, 0)):
+        l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 1982) and (dt >= datetime(dt.year, 12, 18, 0, 0)):
-        l = 'D'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 1983) and (dt >= datetime(dt.year, 2, 12, 0, 0)):
+    if (dt.year == 1978) and (dt >= datetime(dt.year, 10, 1, 0, 0)):
+        l = '-'
+        s = timedelta(seconds=0, hours=0, minutes=0)
+    if (dt.year >= 1979) and (dt.year <= 1995) and (dt >= __lastSun	(dt.year, 9, 0, 0)):
+        l = '-'
+        s = timedelta(seconds=0, hours=0, minutes=0)
+    if (dt.year >= 1981) and (dt >= __lastSun	(dt.year, 3, 0, 0)):
         l = 'S'
+        s = timedelta(seconds=0, hours=1, minutes=0)
+    if (dt.year >= 1996) and (dt >= __lastSun	(dt.year, 10, 0, 0)):
+        l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
     return (s, l)
 def _Uruguay(dt):
@@ -4837,54 +4764,9 @@ def _Egypt(dt):
     if (dt.year == 2014) and (dt >= datetime(dt.year, 7, 31, 0, 0)):
         l = 'S'
         s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 2014) and (dt >= __lastThu(dt.year, 9, 0, 0)):
+    if (dt.year == 2014) and (dt >= __lastThu(dt.year, 9, 0, 0)):
         l = '-'
         s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year >= 2015) and (dt.year <= 2019) and (dt >= __lastFri	(dt.year, 4, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2015) and (dt >= datetime(dt.year, 6, 11, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 2015) and (dt >= datetime(dt.year, 7, 23, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2016) and (dt >= datetime(dt.year, 6, 2, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 2016) and (dt >= datetime(dt.year, 7, 7, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2017) and (dt >= datetime(dt.year, 5, 25, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 2017) and (dt >= datetime(dt.year, 6, 29, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2018) and (dt >= datetime(dt.year, 5, 10, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 2018) and (dt >= datetime(dt.year, 6, 14, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2019) and (dt >= datetime(dt.year, 5, 2, 0, 0)):
-        l = '-'
-        s = timedelta(seconds=0, hours=0, minutes=0)
-    if (dt.year == 2019) and (dt >= datetime(dt.year, 6, 6, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2020) and (dt >= datetime(dt.year, 5, 28, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2021) and (dt >= datetime(dt.year, 5, 13, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year == 2022) and (dt >= datetime(dt.year, 5, 5, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
-    if (dt.year >= 2023) and (dt >= __lastFri	(dt.year, 4, 0, 0)):
-        l = 'S'
-        s = timedelta(seconds=0, hours=1, minutes=0)
     return (s, l)
 def _Halifax(dt):
     s = timedelta()
@@ -9958,7 +9840,7 @@ class America_Managua(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class Asia_Brunei(tzinfo):
+class America_Pangnirtung(tzinfo):
     def __from_rules(self, dt):
         rule = None
         format = None
@@ -9969,18 +9851,26 @@ class Asia_Brunei(tzinfo):
             dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
         else:
             dt = datetime.now()
-        if (dt < datetime(1926,3,1,0,0)):
-            offset = timedelta(seconds=0, hours=7, minutes=39)
+        if (dt < datetime(1921,1,1,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
             rule = None
-            format = 'LMT'
-        elif(dt < datetime(1933,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=7, minutes=30)
-            rule = None
-            format = 'BNT'
+            format = 'zzz'
+        elif(dt < datetime(1995,4,1,0,0)):
+            offset = timedelta(seconds=0, hours=-4, minutes=0)
+            rule = _NT_YK
+            format = 'A%sT'
+        elif(dt < datetime(1999,10,31,0,0)):
+            offset = timedelta(seconds=0, hours=-5, minutes=0)
+            rule = _Canada
+            format = 'E%sT'
+        elif(dt < datetime(2000,10,29,0,0)):
+            offset = timedelta(seconds=0, hours=-6, minutes=0)
+            rule = _Canada
+            format = 'C%sT'
         else:
-            offset = timedelta(seconds=0, hours=8, minutes=0)
-            rule = None
-            format = 'BNT'
+            offset = timedelta(seconds=0, hours=-5, minutes=0)
+            rule = _Canada
+            format = 'E%sT'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -10216,45 +10106,6 @@ class America_Martinique(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class America_Antigua(tzinfo):
-    def __from_rules(self, dt):
-        rule = None
-        format = None
-        letter = None
-        offset = timedelta()
-        save = timedelta()
-        if dt:
-            dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
-        else:
-            dt = datetime.now()
-        if (dt < datetime(1912,3,2,0,0)):
-            offset = timedelta(seconds=0, hours=-4, minutes=-7)
-            rule = None
-            format = 'LMT'
-        elif(dt < datetime(1951,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = None
-            format = 'EST'
-        else:
-            offset = timedelta(seconds=0, hours=-4, minutes=0)
-            rule = None
-            format = 'AST'
-        if rule is not None:
-            save, letter = rule(dt)
-        if offset is not None and save is not None:
-            offset = offset + save
-        if format is not None and letter is not None and '%' in format:
-            format = format % letter
-        return offset, save, format
-    def utcoffset(self, dt):
-        offset, _, _ = self.__from_rules(dt)
-        return offset
-    def dst(self, dt):
-        _, save, _ = self.__from_rules(dt)
-        return save
-    def tzname(self, dt):
-        _, _, format = self.__from_rules(dt)
-        return format
 class America_Indiana_Indianapolis(tzinfo):
     def __from_rules(self, dt):
         rule = None
@@ -10436,7 +10287,7 @@ class Pacific_Tahiti(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class America_Pangnirtung(tzinfo):
+class Asia_Brunei(tzinfo):
     def __from_rules(self, dt):
         rule = None
         format = None
@@ -10447,26 +10298,18 @@ class America_Pangnirtung(tzinfo):
             dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
         else:
             dt = datetime.now()
-        if (dt < datetime(1921,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
+        if (dt < datetime(1926,3,1,0,0)):
+            offset = timedelta(seconds=0, hours=7, minutes=39)
             rule = None
-            format = 'zzz'
-        elif(dt < datetime(1995,4,1,0,0)):
-            offset = timedelta(seconds=0, hours=-4, minutes=0)
-            rule = _NT_YK
-            format = 'A%sT'
-        elif(dt < datetime(1999,10,31,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Canada
-            format = 'E%sT'
-        elif(dt < datetime(2000,10,29,0,0)):
-            offset = timedelta(seconds=0, hours=-6, minutes=0)
-            rule = _Canada
-            format = 'C%sT'
+            format = 'LMT'
+        elif(dt < datetime(1933,1,1,0,0)):
+            offset = timedelta(seconds=0, hours=7, minutes=30)
+            rule = None
+            format = 'BNT'
         else:
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Canada
-            format = 'E%sT'
+            offset = timedelta(seconds=0, hours=8, minutes=0)
+            rule = None
+            format = 'BNT'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -10801,61 +10644,6 @@ class America_Ojinaga(tzinfo):
             offset = timedelta(seconds=0, hours=-7, minutes=0)
             rule = _US
             format = 'M%sT'
-        if rule is not None:
-            save, letter = rule(dt)
-        if offset is not None and save is not None:
-            offset = offset + save
-        if format is not None and letter is not None and '%' in format:
-            format = format % letter
-        return offset, save, format
-    def utcoffset(self, dt):
-        offset, _, _ = self.__from_rules(dt)
-        return offset
-    def dst(self, dt):
-        _, save, _ = self.__from_rules(dt)
-        return save
-    def tzname(self, dt):
-        _, _, format = self.__from_rules(dt)
-        return format
-class America_Montreal(tzinfo):
-    def __from_rules(self, dt):
-        rule = None
-        format = None
-        letter = None
-        offset = timedelta()
-        save = timedelta()
-        if dt:
-            dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
-        else:
-            dt = datetime.now()
-        if (dt < datetime(1884,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-4, minutes=-54)
-            rule = None
-            format = 'LMT'
-        elif(dt < datetime(1918,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Mont
-            format = 'E%sT'
-        elif(dt < datetime(1919,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Canada
-            format = 'E%sT'
-        elif(dt < datetime(1942,2,1,9,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Mont
-            format = 'E%sT'
-        elif(dt < datetime(1946,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Canada
-            format = 'E%sT'
-        elif(dt < datetime(1974,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Mont
-            format = 'E%sT'
-        else:
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = _Canada
-            format = 'E%sT'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -11209,7 +10997,7 @@ class America_Adak(tzinfo):
         else:
             offset = timedelta(seconds=0, hours=-10, minutes=0)
             rule = _US
-            format = 'HA%sT'
+            format = 'H%sT'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -11465,6 +11253,53 @@ class Europe_Moscow(tzinfo):
             offset = timedelta(seconds=0, hours=3, minutes=0)
             rule = None
             format = 'MSK'
+        if rule is not None:
+            save, letter = rule(dt)
+        if offset is not None and save is not None:
+            offset = offset + save
+        if format is not None and letter is not None and '%' in format:
+            format = format % letter
+        return offset, save, format
+    def utcoffset(self, dt):
+        offset, _, _ = self.__from_rules(dt)
+        return offset
+    def dst(self, dt):
+        _, save, _ = self.__from_rules(dt)
+        return save
+    def tzname(self, dt):
+        _, _, format = self.__from_rules(dt)
+        return format
+class Asia_Pyongyang(tzinfo):
+    def __from_rules(self, dt):
+        rule = None
+        format = None
+        letter = None
+        offset = timedelta()
+        save = timedelta()
+        if dt:
+            dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
+        else:
+            dt = datetime.now()
+        if (dt < datetime(1908,4,1,1,0)):
+            offset = timedelta(seconds=0, hours=8, minutes=23)
+            rule = None
+            format = 'LMT'
+        elif(dt < datetime(1912,1,1,1,0)):
+            offset = timedelta(seconds=0, hours=8, minutes=30)
+            rule = None
+            format = 'KST'
+        elif(dt < datetime(1937,10,1,1,0)):
+            offset = timedelta(seconds=0, hours=9, minutes=0)
+            rule = None
+            format = 'JCST'
+        elif(dt < datetime(1945,8,24,0,0)):
+            offset = timedelta(seconds=0, hours=9, minutes=0)
+            rule = None
+            format = 'JST'
+        else:
+            offset = timedelta(seconds=0, hours=9, minutes=0)
+            rule = None
+            format = 'KST'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -12887,57 +12722,6 @@ class Europe_Budapest(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class Pacific_Midway(tzinfo):
-    def __from_rules(self, dt):
-        rule = None
-        format = None
-        letter = None
-        offset = timedelta()
-        save = timedelta()
-        if dt:
-            dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
-        else:
-            dt = datetime.now()
-        if (dt < datetime(1901,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-11, minutes=-49)
-            rule = None
-            format = 'LMT'
-        elif(dt < datetime(1956,6,1,3,0)):
-            offset = timedelta(seconds=0, hours=-11, minutes=0)
-            rule = None
-            format = 'NST'
-        elif(dt < datetime(1956,9,1,2,0)):
-            offset = timedelta(seconds=0, hours=-11, minutes=0)
-            rule = _rule_constant_1hour
-            format = 'NDT'
-        elif(dt < datetime(1967,4,1,0,0)):
-            offset = timedelta(seconds=0, hours=-11, minutes=0)
-            rule = None
-            format = 'NST'
-        elif(dt < datetime(1983,11,30,0,0)):
-            offset = timedelta(seconds=0, hours=-11, minutes=0)
-            rule = None
-            format = 'BST'
-        else:
-            offset = timedelta(seconds=0, hours=-11, minutes=0)
-            rule = None
-            format = 'SST'
-        if rule is not None:
-            save, letter = rule(dt)
-        if offset is not None and save is not None:
-            offset = offset + save
-        if format is not None and letter is not None and '%' in format:
-            format = format % letter
-        return offset, save, format
-    def utcoffset(self, dt):
-        offset, _, _ = self.__from_rules(dt)
-        return offset
-    def dst(self, dt):
-        _, save, _ = self.__from_rules(dt)
-        return save
-    def tzname(self, dt):
-        _, _, format = self.__from_rules(dt)
-        return format
 class America_Goose_Bay(tzinfo):
     def __from_rules(self, dt):
         rule = None
@@ -13444,7 +13228,7 @@ class Asia_Jakarta(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class Asia_Pyongyang(tzinfo):
+class Antarctica_Palmer(tzinfo):
     def __from_rules(self, dt):
         rule = None
         format = None
@@ -13455,26 +13239,26 @@ class Asia_Pyongyang(tzinfo):
             dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
         else:
             dt = datetime.now()
-        if (dt < datetime(1908,4,1,1,0)):
-            offset = timedelta(seconds=0, hours=8, minutes=23)
+        if (dt < datetime(1965,1,1,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
             rule = None
-            format = 'LMT'
-        elif(dt < datetime(1912,1,1,1,0)):
-            offset = timedelta(seconds=0, hours=8, minutes=30)
-            rule = None
-            format = 'KST'
-        elif(dt < datetime(1937,10,1,1,0)):
-            offset = timedelta(seconds=0, hours=9, minutes=0)
-            rule = None
-            format = 'JCST'
-        elif(dt < datetime(1945,8,24,0,0)):
-            offset = timedelta(seconds=0, hours=9, minutes=0)
-            rule = None
-            format = 'JST'
+            format = 'zzz'
+        elif(dt < datetime(1969,10,1,5,0)):
+            offset = timedelta(seconds=0, hours=-4, minutes=0)
+            rule = _Arg
+            format = 'AR%sT'
+        elif(dt < datetime(1982,5,1,0,0)):
+            offset = timedelta(seconds=0, hours=-3, minutes=0)
+            rule = _Arg
+            format = 'AR%sT'
+        elif(dt < datetime(2015,4,26,3,0)):
+            offset = timedelta(seconds=0, hours=-4, minutes=0)
+            rule = _Chile
+            format = 'CL%sT'
         else:
-            offset = timedelta(seconds=0, hours=9, minutes=0)
+            offset = timedelta(seconds=0, hours=-3, minutes=0)
             rule = None
-            format = 'KST'
+            format = 'CLT'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -14923,7 +14707,7 @@ class America_Nome(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class Asia_Taipei(tzinfo):
+class Europe_Dublin(tzinfo):
     def __from_rules(self, dt):
         rule = None
         format = None
@@ -14934,22 +14718,58 @@ class Asia_Taipei(tzinfo):
             dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
         else:
             dt = datetime.now()
-        if (dt < datetime(1896,1,1,1,0)):
-            offset = timedelta(seconds=0, hours=8, minutes=6)
+        if (dt < datetime(1880,8,1,2,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=-25)
             rule = None
             format = 'LMT'
-        elif(dt < datetime(1937,10,1,1,0)):
-            offset = timedelta(seconds=0, hours=8, minutes=0)
+        elif(dt < datetime(1916,5,21,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=-25)
             rule = None
-            format = 'JWST'
-        elif(dt < datetime(1945,9,21,0,0)):
-            offset = timedelta(seconds=0, hours=9, minutes=0)
+            format = 'DMT'
+        elif(dt < datetime(1916,10,1,1,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=-25)
+            rule = _rule_constant_1hour
+            format = 'IST'
+        elif(dt < datetime(1921,12,1,6,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = _GB_Eire
+            format = '%s'
+        elif(dt < datetime(1940,2,25,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = _GB_Eire
+            format = 'GMT/IST'
+        elif(dt < datetime(1946,10,1,6,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = _rule_constant_1hour
+            format = 'IST'
+        elif(dt < datetime(1947,3,16,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
             rule = None
-            format = 'JST'
+            format = 'GMT'
+        elif(dt < datetime(1947,11,1,2,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = _rule_constant_1hour
+            format = 'IST'
+        elif(dt < datetime(1948,4,18,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = None
+            format = 'GMT'
+        elif(dt < datetime(1968,10,27,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = _GB_Eire
+            format = 'GMT/IST'
+        elif(dt < datetime(1971,10,31,0,0)):
+            offset = timedelta(seconds=0, hours=1, minutes=0)
+            rule = None
+            format = 'IST'
+        elif(dt < datetime(1996,1,1,0,0)):
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = _GB_Eire
+            format = 'GMT/IST'
         else:
-            offset = timedelta(seconds=0, hours=8, minutes=0)
-            rule = _Taiwan
-            format = 'C%sT'
+            offset = timedelta(seconds=0, hours=0, minutes=0)
+            rule = _EU
+            format = 'GMT/IST'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -15724,53 +15544,6 @@ class Europe_Tirane(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class Pacific_Saipan(tzinfo):
-    def __from_rules(self, dt):
-        rule = None
-        format = None
-        letter = None
-        offset = timedelta()
-        save = timedelta()
-        if dt:
-            dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
-        else:
-            dt = datetime.now()
-        if (dt < datetime(1844,12,31,0,0)):
-            offset = timedelta(seconds=0, hours=-14, minutes=-17)
-            rule = None
-            format = 'LMT'
-        elif(dt < datetime(1901,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=9, minutes=43)
-            rule = None
-            format = 'LMT'
-        elif(dt < datetime(1969,10,1,0,0)):
-            offset = timedelta(seconds=0, hours=9, minutes=0)
-            rule = None
-            format = 'MPT'
-        elif(dt < datetime(2000,12,23,0,0)):
-            offset = timedelta(seconds=0, hours=10, minutes=0)
-            rule = None
-            format = 'MPT'
-        else:
-            offset = timedelta(seconds=0, hours=10, minutes=0)
-            rule = None
-            format = 'ChST'
-        if rule is not None:
-            save, letter = rule(dt)
-        if offset is not None and save is not None:
-            offset = offset + save
-        if format is not None and letter is not None and '%' in format:
-            format = format % letter
-        return offset, save, format
-    def utcoffset(self, dt):
-        offset, _, _ = self.__from_rules(dt)
-        return offset
-    def dst(self, dt):
-        _, save, _ = self.__from_rules(dt)
-        return save
-    def tzname(self, dt):
-        _, _, format = self.__from_rules(dt)
-        return format
 class Asia_Magadan(tzinfo):
     def __from_rules(self, dt):
         rule = None
@@ -16008,7 +15781,7 @@ class America_Santiago(tzinfo):
             offset = timedelta(seconds=0, hours=-4, minutes=-42)
             rule = None
             format = 'LMT'
-        elif(dt < datetime(1910,1,1,0,0)):
+        elif(dt < datetime(1910,1,10,0,0)):
             offset = timedelta(seconds=0, hours=-4, minutes=-42)
             rule = None
             format = 'SMT'
@@ -16016,7 +15789,7 @@ class America_Santiago(tzinfo):
             offset = timedelta(seconds=0, hours=-5, minutes=0)
             rule = None
             format = 'CLT'
-        elif(dt < datetime(1918,9,1,1,0)):
+        elif(dt < datetime(1918,9,10,0,0)):
             offset = timedelta(seconds=0, hours=-4, minutes=-42)
             rule = None
             format = 'SMT'
@@ -16028,10 +15801,34 @@ class America_Santiago(tzinfo):
             offset = timedelta(seconds=0, hours=-4, minutes=-42)
             rule = None
             format = 'SMT'
-        elif(dt < datetime(1947,5,22,0,0)):
+        elif(dt < datetime(1932,9,1,1,0)):
             offset = timedelta(seconds=0, hours=-5, minutes=0)
             rule = _Chile
             format = 'CL%sT'
+        elif(dt < datetime(1942,6,1,1,0)):
+            offset = timedelta(seconds=0, hours=-4, minutes=0)
+            rule = None
+            format = 'CLT'
+        elif(dt < datetime(1942,8,1,1,0)):
+            offset = timedelta(seconds=0, hours=-5, minutes=0)
+            rule = None
+            format = 'CLT'
+        elif(dt < datetime(1946,7,15,0,0)):
+            offset = timedelta(seconds=0, hours=-4, minutes=0)
+            rule = None
+            format = 'CLT'
+        elif(dt < datetime(1946,9,1,1,0)):
+            offset = timedelta(seconds=0, hours=-4, minutes=0)
+            rule = _rule_constant_1hour
+            format = 'CLST'
+        elif(dt < datetime(1947,4,1,1,0)):
+            offset = timedelta(seconds=0, hours=-4, minutes=0)
+            rule = None
+            format = 'CLT'
+        elif(dt < datetime(1947,5,21,23,0)):
+            offset = timedelta(seconds=0, hours=-5, minutes=0)
+            rule = None
+            format = 'CLT'
         elif(dt < datetime(2015,4,26,0,0)):
             offset = timedelta(seconds=0, hours=-4, minutes=0)
             rule = _Chile
@@ -17702,7 +17499,7 @@ class Europe_Volgograd(tzinfo):
         elif(dt < datetime(2011,3,27,0,0)):
             offset = timedelta(seconds=0, hours=3, minutes=0)
             rule = _Russia
-            format = 'MSK'
+            format = 'MSK/MSD'
         elif(dt < datetime(2014,10,26,0,0)):
             offset = timedelta(seconds=0, hours=4, minutes=0)
             rule = None
@@ -20444,7 +20241,7 @@ class America_Whitehorse(tzinfo):
             offset = timedelta(seconds=0, hours=-9, minutes=0)
             rule = None
             format = 'LMT'
-        elif(dt < datetime(1966,7,1,1,0)):
+        elif(dt < datetime(1967,5,28,0,0)):
             offset = timedelta(seconds=0, hours=-9, minutes=0)
             rule = _NT_YK
             format = 'Y%sT'
@@ -21030,45 +20827,6 @@ class America_Port_au_Prince(tzinfo):
             offset = timedelta(seconds=0, hours=-5, minutes=0)
             rule = _Haiti
             format = 'E%sT'
-        if rule is not None:
-            save, letter = rule(dt)
-        if offset is not None and save is not None:
-            offset = offset + save
-        if format is not None and letter is not None and '%' in format:
-            format = format % letter
-        return offset, save, format
-    def utcoffset(self, dt):
-        offset, _, _ = self.__from_rules(dt)
-        return offset
-    def dst(self, dt):
-        _, save, _ = self.__from_rules(dt)
-        return save
-    def tzname(self, dt):
-        _, _, format = self.__from_rules(dt)
-        return format
-class America_Cayman(tzinfo):
-    def __from_rules(self, dt):
-        rule = None
-        format = None
-        letter = None
-        offset = timedelta()
-        save = timedelta()
-        if dt:
-            dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
-        else:
-            dt = datetime.now()
-        if (dt < datetime(1890,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=-25)
-            rule = None
-            format = 'LMT'
-        elif(dt < datetime(1912,2,1,0,0)):
-            offset = timedelta(seconds=0, hours=-5, minutes=-7)
-            rule = None
-            format = 'KMT'
-        else:
-            offset = timedelta(seconds=0, hours=-5, minutes=0)
-            rule = None
-            format = 'EST'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -22220,7 +21978,7 @@ class Pacific_Easter(tzinfo):
             offset = timedelta(seconds=0, hours=-7, minutes=-17)
             rule = None
             format = 'EMT'
-        elif(dt < datetime(1982,3,13,3,0)):
+        elif(dt < datetime(1982,3,14,3,0)):
             offset = timedelta(seconds=0, hours=-7, minutes=0)
             rule = _Chile
             format = 'EAS%sT'
@@ -23702,7 +23460,7 @@ class Asia_Gaza(tzinfo):
     def tzname(self, dt):
         _, _, format = self.__from_rules(dt)
         return format
-class Europe_Dublin(tzinfo):
+class Asia_Taipei(tzinfo):
     def __from_rules(self, dt):
         rule = None
         format = None
@@ -23713,58 +23471,22 @@ class Europe_Dublin(tzinfo):
             dt = datetime(dt.year, dt.month, dt.day, dt.hour, dt.minute)
         else:
             dt = datetime.now()
-        if (dt < datetime(1880,8,1,2,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=-25)
+        if (dt < datetime(1896,1,1,1,0)):
+            offset = timedelta(seconds=0, hours=8, minutes=6)
             rule = None
             format = 'LMT'
-        elif(dt < datetime(1916,5,21,0,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=-25)
+        elif(dt < datetime(1937,10,1,1,0)):
+            offset = timedelta(seconds=0, hours=8, minutes=0)
             rule = None
-            format = 'DMT'
-        elif(dt < datetime(1916,10,1,1,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=-25)
-            rule = _rule_constant_1hour
-            format = 'IST'
-        elif(dt < datetime(1921,12,1,6,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = _GB_Eire
-            format = '%s'
-        elif(dt < datetime(1940,2,25,0,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = _GB_Eire
-            format = 'GMT/IST'
-        elif(dt < datetime(1946,10,1,6,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = _rule_constant_1hour
-            format = 'IST'
-        elif(dt < datetime(1947,3,16,0,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
+            format = 'JWST'
+        elif(dt < datetime(1945,9,21,0,0)):
+            offset = timedelta(seconds=0, hours=9, minutes=0)
             rule = None
-            format = 'GMT'
-        elif(dt < datetime(1947,11,1,2,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = _rule_constant_1hour
-            format = 'IST'
-        elif(dt < datetime(1948,4,18,0,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = None
-            format = 'GMT'
-        elif(dt < datetime(1968,10,27,0,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = _GB_Eire
-            format = 'GMT/IST'
-        elif(dt < datetime(1971,10,31,0,0)):
-            offset = timedelta(seconds=0, hours=1, minutes=0)
-            rule = None
-            format = 'IST'
-        elif(dt < datetime(1996,1,1,0,0)):
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = _GB_Eire
-            format = 'GMT/IST'
+            format = 'JST'
         else:
-            offset = timedelta(seconds=0, hours=0, minutes=0)
-            rule = _EU
-            format = 'GMT/IST'
+            offset = timedelta(seconds=0, hours=8, minutes=0)
+            rule = _Taiwan
+            format = 'C%sT'
         if rule is not None:
             save, letter = rule(dt)
         if offset is not None and save is not None:
@@ -24322,6 +24044,7 @@ America_Montserrat = America_Port_of_Spain
 PRC = Asia_Shanghai
 US_Mountain = America_Denver
 Asia_Thimbu = Asia_Thimphu
+Pacific_Saipan = Pacific_Guam
 Africa_Blantyre = Africa_Maputo
 Asia_Kashgar = Asia_Urumqi
 America_Shiprock = America_Denver
@@ -24336,6 +24059,7 @@ Europe_Guernsey = Europe_London
 Africa_Kampala = Africa_Nairobi
 GB = Europe_London
 America_Aruba = America_Curacao
+America_Cayman = America_Panama
 Canada_Yukon = America_Whitehorse
 Jamaica = America_Jamaica
 Africa_Dar_es_Salaam = Africa_Nairobi
@@ -24344,6 +24068,7 @@ Pacific_Truk = Pacific_Chuuk
 Pacific_Yap = Pacific_Chuuk
 Africa_Luanda = Africa_Lagos
 America_Ensenada = America_Tijuana
+Pacific_Midway = Pacific_Pago_Pago
 Europe_Sarajevo = Europe_Belgrade
 Canada_Atlantic = America_Halifax
 Turkey = Europe_Istanbul
@@ -24477,6 +24202,7 @@ Iceland = Atlantic_Reykjavik
 Africa_Bangui = Africa_Lagos
 Brazil_Acre = America_Rio_Branco
 Europe_Vatican = Europe_Rome
+America_Antigua = America_Port_of_Spain
 Australia_Queensland = Australia_Brisbane
 Poland = Europe_Warsaw
 Africa_Timbuktu = Africa_Abidjan
@@ -24498,6 +24224,7 @@ America_Dominica = America_Port_of_Spain
 Egypt = Africa_Cairo
 Africa_Porto_Novo = Africa_Lagos
 America_Tortola = America_Port_of_Spain
+America_Montreal = America_Toronto
 Africa_Brazzaville = Africa_Lagos
 Europe_Vaduz = Europe_Zurich
 Antarctica_South_Pole = Pacific_Auckland
@@ -24581,23 +24308,21 @@ timezones = {
         "Africa/Ndjamena": Africa_Ndjamena(),
         "America/Costa_Rica": America_Costa_Rica(),
         "America/Managua": America_Managua(),
-        "Asia/Brunei": Asia_Brunei(),
+        "America/Pangnirtung": America_Pangnirtung(),
         "Etc/GMT+12": Etc_GMTplus12(),
         "America/Tijuana": America_Tijuana(),
         "Pacific/Fakaofo": Pacific_Fakaofo(),
         "America/Martinique": America_Martinique(),
-        "America/Antigua": America_Antigua(),
         "America/Indiana/Indianapolis": America_Indiana_Indianapolis(),
         "America/Argentina/La_Rioja": America_Argentina_La_Rioja(),
         "Pacific/Tahiti": Pacific_Tahiti(),
-        "America/Pangnirtung": America_Pangnirtung(),
+        "Asia/Brunei": Asia_Brunei(),
         "America/Asuncion": America_Asuncion(),
         "Europe/Vienna": Europe_Vienna(),
         "Australia/Hobart": Australia_Hobart(),
         "America/Juneau": America_Juneau(),
         "America/Inuvik": America_Inuvik(),
         "America/Ojinaga": America_Ojinaga(),
-        "America/Montreal": America_Montreal(),
         "Asia/Seoul": Asia_Seoul(),
         "Europe/Tallinn": Europe_Tallinn(),
         "Indian/Mahe": Indian_Mahe(),
@@ -24609,6 +24334,7 @@ timezones = {
         "Pacific/Noumea": Pacific_Noumea(),
         "Africa/Cairo": Africa_Cairo(),
         "Europe/Moscow": Europe_Moscow(),
+        "Asia/Pyongyang": Asia_Pyongyang(),
         "Asia/Ulaanbaatar": Asia_Ulaanbaatar(),
         "America/Rainy_River": America_Rainy_River(),
         "Indian/Maldives": Indian_Maldives(),
@@ -24641,7 +24367,6 @@ timezones = {
         "America/Jamaica": America_Jamaica(),
         "Europe/Kiev": Europe_Kiev(),
         "Europe/Budapest": Europe_Budapest(),
-        "Pacific/Midway": Pacific_Midway(),
         "America/Goose_Bay": America_Goose_Bay(),
         "Asia/Amman": Asia_Amman(),
         "Asia/Sakhalin": Asia_Sakhalin(),
@@ -24652,7 +24377,7 @@ timezones = {
         "America/Sao_Paulo": America_Sao_Paulo(),
         "Australia/Perth": Australia_Perth(),
         "Asia/Jakarta": Asia_Jakarta(),
-        "Asia/Pyongyang": Asia_Pyongyang(),
+        "Antarctica/Palmer": Antarctica_Palmer(),
         "EST5EDT": EST5EDT(),
         "Africa/Johannesburg": Africa_Johannesburg(),
         "Asia/Irkutsk": Asia_Irkutsk(),
@@ -24684,7 +24409,7 @@ timezones = {
         "Asia/Almaty": Asia_Almaty(),
         "America/Santo_Domingo": America_Santo_Domingo(),
         "America/Nome": America_Nome(),
-        "Asia/Taipei": Asia_Taipei(),
+        "Europe/Dublin": Europe_Dublin(),
         "America/Yakutat": America_Yakutat(),
         "America/Argentina/Mendoza": America_Argentina_Mendoza(),
         "America/Araguaina": America_Araguaina(),
@@ -24698,7 +24423,6 @@ timezones = {
         "Europe/Samara": Europe_Samara(),
         "Europe/Amsterdam": Europe_Amsterdam(),
         "Europe/Tirane": Europe_Tirane(),
-        "Pacific/Saipan": Pacific_Saipan(),
         "Asia/Magadan": Asia_Magadan(),
         "Europe/Zaporozhye": Europe_Zaporozhye(),
         "HST": HST(),
@@ -24809,7 +24533,6 @@ timezones = {
         "Asia/Kathmandu": Asia_Kathmandu(),
         "Asia/Pontianak": Asia_Pontianak(),
         "America/Port-au-Prince": America_Port_au_Prince(),
-        "America/Cayman": America_Cayman(),
         "Europe/Athens": Europe_Athens(),
         "America/Curacao": America_Curacao(),
         "Africa/Khartoum": Africa_Khartoum(),
@@ -24867,7 +24590,7 @@ timezones = {
         "America/Resolute": America_Resolute(),
         "Etc/GMT": Etc_GMT(),
         "Asia/Gaza": Asia_Gaza(),
-        "Europe/Dublin": Europe_Dublin(),
+        "Asia/Taipei": Asia_Taipei(),
         "America/Argentina/Catamarca": America_Argentina_Catamarca(),
         "America/Indiana/Knox": America_Indiana_Knox(),
         "Asia/Novosibirsk": Asia_Novosibirsk(),
@@ -24897,6 +24620,7 @@ timezones = {
         "PRC": PRC(),
         "US/Mountain": US_Mountain(),
         "Asia/Thimbu": Asia_Thimbu(),
+        "Pacific/Saipan": Pacific_Saipan(),
         "Africa/Blantyre": Africa_Blantyre(),
         "Asia/Kashgar": Asia_Kashgar(),
         "America/Shiprock": America_Shiprock(),
@@ -24911,6 +24635,7 @@ timezones = {
         "Africa/Kampala": Africa_Kampala(),
         "GB": GB(),
         "America/Aruba": America_Aruba(),
+        "America/Cayman": America_Cayman(),
         "Canada/Yukon": Canada_Yukon(),
         "Jamaica": Jamaica(),
         "Africa/Dar_es_Salaam": Africa_Dar_es_Salaam(),
@@ -24919,6 +24644,7 @@ timezones = {
         "Pacific/Yap": Pacific_Yap(),
         "Africa/Luanda": Africa_Luanda(),
         "America/Ensenada": America_Ensenada(),
+        "Pacific/Midway": Pacific_Midway(),
         "Europe/Sarajevo": Europe_Sarajevo(),
         "Canada/Atlantic": Canada_Atlantic(),
         "Turkey": Turkey(),
@@ -25052,6 +24778,7 @@ timezones = {
         "Africa/Bangui": Africa_Bangui(),
         "Brazil/Acre": Brazil_Acre(),
         "Europe/Vatican": Europe_Vatican(),
+        "America/Antigua": America_Antigua(),
         "Australia/Queensland": Australia_Queensland(),
         "Poland": Poland(),
         "Africa/Timbuktu": Africa_Timbuktu(),
@@ -25073,6 +24800,7 @@ timezones = {
         "Egypt": Egypt(),
         "Africa/Porto-Novo": Africa_Porto_Novo(),
         "America/Tortola": America_Tortola(),
+        "America/Montreal": America_Montreal(),
         "Africa/Brazzaville": Africa_Brazzaville(),
         "Europe/Vaduz": Europe_Vaduz(),
         "Antarctica/South_Pole": Antarctica_South_Pole(),
